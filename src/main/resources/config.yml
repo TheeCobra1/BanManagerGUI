@@ -1,0 +1,52 @@
+ban-message-format: "§cYou have been banned!\n§7Reason: {reason}\n§7Banned by: {issuer}"
+tempban-message-format: "§cYou have been temporarily banned!\n§7Reason: {reason}\n§7Duration: {duration}\n§7Banned by: {issuer}"
+mute-message-format: "§cYou have been muted!\n§7Reason: {reason}\n§7Muted by: {issuer}"
+tempmute-message-format: "§cYou have been temporarily muted!\n§7Reason: {reason}\n§7Duration: {duration}\n§7Muted by: {issuer}"
+kick-message-format: "§cYou have been kicked!\n§7Reason: {reason}\n§7Kicked by: {issuer}"
+
+gui-title-home: "§cBan Manager - Home"
+gui-title-player-select: "§cSelect Player - {action}"
+gui-title-punishment: "§c{action} - {player}"
+
+enable-broadcast:
+  ban: true
+  tempban: true
+  mute: true
+  tempmute: true
+  kick: true
+  unban: true
+  unmute: true
+
+broadcast-format:
+  ban: "§c{player} has been banned by {issuer} for: {reason}"
+  tempban: "§c{player} has been temporarily banned by {issuer} for {duration}. Reason: {reason}"
+  mute: "§e{player} has been muted by {issuer} for: {reason}"
+  tempmute: "§e{player} has been temporarily muted by {issuer} for {duration}. Reason: {reason}"
+  kick: "§c{player} has been kicked by {issuer} for: {reason}"
+  unban: "§a{player} has been unbanned by {issuer}"
+  unmute: "§a{player} has been unmuted by {issuer}"
+
+vpn-detection:
+  enabled: false
+  kick-on-detect: true
+  notify-staff: true
+  api-key: "your-api-key-here"
+  cache-duration: 86400000
+  kick-message: "§cVPN/Proxy connections are not allowed!"
+  
+auto-mod:
+  enabled: false
+  detect-spam: true
+  detect-caps: true
+  detect-advertising: true
+  max-caps-percent: 70
+  spam-threshold: 3
+  spam-interval: 5000
+  blocked-words:
+    - "badword1"
+    - "badword2"
+  warn-before-punish: true
+  punishments:
+    warn: 1
+    mute: 3
+    kick: 5

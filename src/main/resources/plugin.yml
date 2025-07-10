@@ -1,0 +1,97 @@
+name: BanManagerGUI
+version: '1.0.0'
+main: BMG.banManagerGUI.BanManagerGUI
+api-version: '1.20'
+authors: [BanManagerGUI]
+description: Advanced Ban Management GUI for easy server moderation
+commands:
+  banmanager:
+    description: Opens the Ban Manager GUI
+    aliases: [bm, bangui]
+    usage: /<command>
+    permission: banmanager.use
+  ban:
+    description: Ban a player
+    usage: /<command> <player> [reason]
+    permission: banmanager.ban
+  unban:
+    description: Unban a player
+    usage: /<command> <player>
+    permission: banmanager.unban
+  mute:
+    description: Mute a player
+    usage: /<command> <player> [reason]
+    permission: banmanager.mute
+  unmute:
+    description: Unmute a player
+    usage: /<command> <player>
+    permission: banmanager.unmute
+  kick:
+    description: Kick a player
+    usage: /<command> <player> [reason]
+    permission: banmanager.kick
+permissions:
+  banmanager.*:
+    description: All Ban Manager permissions
+    default: op
+    children:
+      banmanager.use: true
+      banmanager.ban: true
+      banmanager.unban: true
+      banmanager.mute: true
+      banmanager.unmute: true
+      banmanager.kick: true
+      banmanager.tempban: true
+      banmanager.tempmute: true
+      banmanager.history: true
+      banmanager.reload: true
+      banmanager.notify: true
+      banmanager.advanced: true
+      banmanager.ipmanage: true
+      banmanager.warning: true
+      banmanager.statistics: true
+  banmanager.use:
+    description: Use the Ban Manager GUI
+    default: op
+  banmanager.ban:
+    description: Ban players
+    default: op
+  banmanager.unban:
+    description: Unban players
+    default: op
+  banmanager.mute:
+    description: Mute players
+    default: op
+  banmanager.unmute:
+    description: Unmute players
+    default: op
+  banmanager.kick:
+    description: Kick players
+    default: op
+  banmanager.tempban:
+    description: Temporarily ban players
+    default: op
+  banmanager.tempmute:
+    description: Temporarily mute players
+    default: op
+  banmanager.history:
+    description: View punishment history
+    default: op
+  banmanager.reload:
+    description: Reload plugin configuration
+    default: op
+  banmanager.notify:
+    description: Receive ban/mute notifications
+    default: op
+  banmanager.advanced:
+    description: Access advanced admin tools
+    default: op
+  banmanager.ipmanage:
+    description: Manage IP bans and lookups
+    default: op
+  banmanager.warning:
+    description: Issue and manage warnings
+    default: op
+  banmanager.statistics:
+    description: View punishment statistics
+    default: op
