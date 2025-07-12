@@ -16,4 +16,13 @@ Helps you manage player bans with a simple interface. View, add, remove, and tra
 - Check ban history
 - Set temp bans with timers
 
+## Permissions
+- `bangui.use` - Open the GUI
+- `bangui.ban` - Ban players
+- `bangui.unban` - Remove bans
+- `bangui.admin` - Full access
+
+## Works with
+Spigot & Paper 1.16 - 1.20+
+
 That's it. Simple and effective.
