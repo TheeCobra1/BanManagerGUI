@@ -8,21 +8,34 @@ Helps you manage player bans with a simple interface. View, add, remove, and tra
 ## Quick setup
 1. Drop the jar in your plugins folder
 2. Restart your server
-3. Use `/bangui` to open
+3. Use `/banmanager` or `/bm` to open
 
 ## Features
-- See all bans at a glance
-- Ban/unban players easily
-- Check ban history
-- Set temp bans with timers
+- Ban, mute, and kick players
+- Temporary bans and mutes
+- View punishment history
+- IP ban management
+- Warning system
+- Punishment statistics
+
+## Commands
+- `/banmanager` - Opens the GUI (aliases: `/bm`, `/bangui`)
+- `/ban <player> [reason]` - Quick ban
+- `/unban <player>` - Remove ban
+- `/mute <player> [reason]` - Mute player
+- `/unmute <player>` - Remove mute
+- `/kick <player> [reason]` - Kick player
 
 ## Permissions
-- `bangui.use` - Open the GUI
-- `bangui.ban` - Ban players
-- `bangui.unban` - Remove bans
-- `bangui.admin` - Full access
+- `banmanager.use` - Access the GUI
+- `banmanager.ban` - Ban players
+- `banmanager.unban` - Unban players
+- `banmanager.mute` - Mute players
+- `banmanager.kick` - Kick players
+- `banmanager.history` - View punishment history
+- `banmanager.*` - All permissions
 
 ## Works with
-Spigot & Paper 1.16 - 1.20+
+Minecraft 1.20+ (Spigot/Paper)
 
 That's it. Simple and effective.
